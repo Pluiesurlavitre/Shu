@@ -4,7 +4,20 @@
 
 <script>
 	import { session } from 'store'
+	//
+	// import api from 'api'
+	//
+	// api.get('/api/user')
+	// .then(res => {
+	// 	console.log(res.data)
+	// })
+</script>
 
+<script context="module">
+
+	export async function preload(page, session) {
+		//console.log(page, session)
+	}
 
 </script>
 
