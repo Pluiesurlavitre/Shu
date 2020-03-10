@@ -10,7 +10,9 @@
         await api.get('/airlock/csrf-cookie')
 
         const res = await api.post('/login', { email, password })
-        console.log($session)
+        console.log(res.data.data)
+
+        $session.user = res.data.data
 
         session.set(res.data.data)
 
